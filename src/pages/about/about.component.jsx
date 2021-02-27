@@ -26,7 +26,7 @@ const About = () => {
                                 My name is Joseph Woo, and I am a Computer Science student currently attending Purdue University.
                             <br /> I was born in 2000 and I grew up in San Jose California. My family moved to LA after I went to college. 
                             <br /> I am currently studying CS with a focus of Algorithms and Artificial Intelligence utilizng machine learning.
-                            <br /> In my free time, I enjoy making music, videos, and researching the stock market. I hope to one day make a successful trading algorithm.
+                            <br /> In my free time, I enjoy making music, videos, and researching the stock market. I am currently working on my own trading algorithm.
                         </Row>
                             <Row>
                                 <Col className="d-flex justify-content-center flex-wrap">

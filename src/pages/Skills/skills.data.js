@@ -24,7 +24,7 @@ import L_QUICKSIGHT from "../../assets/img/skills/amazon-quicksight.svg";
 import L_GRAFANA from "../../assets/img/skills/grafana.svg";
 import L_AE from "../../assets/img/skills/after-effects-cc.svg";
 import L_VEGAS from "../../assets/img/skills/sony-vegas-pro.svg";
-
+import L_R from "../../assets/img/skills/r-lang.svg";
 
 export const skills = {
   codeLang: [
@@ -73,6 +73,11 @@ export const skills = {
       imgAltText: "React Bootstrap",
       imgSrc: L_REACT_BOOTSTRAP,
       skillName: "React Bootstrap",
+    },
+    {
+      imgAltText: "R",
+      imgSrc: L_R,
+      skillName: "R",
     },
     
     

@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 
 import L_ReactToDoList from "../../assets/img/projects/React_ToDo_List.webp";
 import L_SNS from "../../assets/img/skills/socialMedia.png";
+import L_BIZTRK from "../../assets/img/skills/biztrak.png";
 
 // skills
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -36,118 +37,193 @@ import "./timeline.style.css";
 
 
 const Projecttimeline = () => {
-    return (
-        <div id='history'>
-            <h1 className="pt-3 text-center font-details-b pb-3">History</h1>
-            <Timeline>
-                <Events>
-                    {/* Project: Todo List With MUI */}
-                    <ImageEvent
-                        date="August 2020-April 2021"
-                        className="text-center"
-                        text="ADOP"
-                        src={L_ADOP}
-                        alt="ADOP"
+  return (
+    <div id='history'>
+      <h1 className="pt-3 text-center font-details-b pb-3">History</h1>
+      <Timeline>
+        <Events>
+          {/* Project: Todo List With MUI */}
+          <ImageEvent
+            date="August 2020-April 2021"
+            className="text-center"
+            text="ADOP"
+            src={L_ADOP}
+            alt="ADOP"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
                     >
-                        <div className="d-flex justify-content-between flex-column mt-1">
-                            <div>
-                                <Accordion>
-                                    <Card>
-                                        <Accordion.Toggle
-                                            as={Card.Header}
-                                            eventKey="0"
-                                            className="p-2 text-center accordian-main"
-                                        >
-                                            PROJECT DETAILS
+                      PROJECT DETAILS
                                         </Accordion.Toggle>
 
-                                        <Accordion.Collapse eventKey="0" className="text-left">
-                                            <Card.Body>
-                                                <strong>Description:</strong> Part Time Worker for ADOP, a Korean based advertising optimization agency which connects platforms with advertisers.
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> Part Time Worker for ADOP, a Korean based advertising optimization agency which connects platforms with advertisers.
                                                 <hr />
-                                                <strong>Tasks:</strong>
-                                                <ul className="list-styles pt-1">
-                                                    <li>Wrote automated Python and MySQL scripts through Amazon Web services like Athena and EC2 in a Linux based environment displaying advertiser web traffic, earnings, and statistics onto a Grafana based dashboard.</li>
-                                                    <li>Set up sample and template Amazon Quicksight dashboards to market to clients. </li>
-                                                    <li>Developed Machine Learning algorithm in Python using SVM Vectors for Natural Language Processing to classify websites as adult or non-adult.</li>
-                                                </ul>
-                                                <hr />
-                                                <strong>Environemnts and Languages used:</strong>
-                                                <ul>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={L_PYTHON}
-                                                                alt="Python"
-                                                                rounded
-                                                                className="image-style m-1"
-                                                            ></Image>{" "} Python
+                        <strong>Tasks:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Wrote automated Python and MySQL scripts through Amazon Web services like Athena and EC2 in a Linux based environment displaying advertiser web traffic, earnings, and statistics onto a Grafana based dashboard.</li>
+                          <li>Set up sample and template Amazon Quicksight dashboards to market to clients. </li>
+                          <li>Developed Machine Learning algorithm in Python using SVM Vectors for Natural Language Processing to classify websites as adult or non-adult.</li>
+                        </ul>
+                        <hr />
+                        <strong>Environemnts and Languages used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_PYTHON}
+                                alt="Python"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "} Python
                                                      </span>
-                                                    </li>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={L_MYSQL}
-                                                                alt="MYSQL"
-                                                                rounded
-                                                                className="image-style m-1"
-                                                            ></Image>{" "} MySQL </span>
-                                                    </li>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={L_EC2}
-                                                                alt="Ec2"
-                                                                rounded
-                                                                className="image-style1 m-1"
-                                                            ></Image>{" "}
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_MYSQL}
+                                alt="MYSQL"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "} MySQL </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_EC2}
+                                alt="Ec2"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
                               AWS-EC2
                             </span>
-                                                    </li>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={L_ATHENA}
-                                                                alt="Amazon Athena"
-                                                                rounded
-                                                                className="image-style1 m-1"
-                                                            ></Image>{" "}AWS-Athena</span>
-                                                    </li>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={L_QUICKSIGHT}
-                                                                alt="Amazon Quicksight"
-                                                                rounded
-                                                                className="image-style1 m-1"
-                                                            ></Image>{" "}AWS-Quicksight</span>
-                                                    </li>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={L_GRAFANA}
-                                                                alt="Grafana"
-                                                                rounded
-                                                                className="image-style1 m-1"
-                                                            ></Image>{" "}Grafana</span>
-                                                    </li>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_ATHENA}
+                                alt="Amazon Athena"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}AWS-Athena</span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_QUICKSIGHT}
+                                alt="Amazon Quicksight"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}AWS-Quicksight</span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_GRAFANA}
+                                alt="Grafana"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}Grafana</span>
+                          </li>
 
-                                                </ul>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                </Accordion>
-                            </div>
-                            
-                        </div>
-                    </ImageEvent>
-                    {/* Project: MERN Tip Calculator */}
-<ImageEvent
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+
+            </div>
+          </ImageEvent>
+          <ImageEvent
+            date="February 2021"
+            className="text-center"
+            text="Buisness Analytics Project"
+            src={L_BIZTRK}
+            alt=""
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> 3 day team hackathon project to assist buisnesses with remaining operational in a pandemic world. 
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Easy input of transactional ledgers to record time, size of purchases, and other miscellaneous details such as membership status</li>
+                          <li>Data visualization for weekly and daily activity.</li>
+                          <li>Once data is inputted, states a recommendation for operating hours for the buisness</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_PYTHON}
+                                alt="Python"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Python
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="React"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React
+                            </span>
+                          </li>
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://github.com/Parv17k/business_optimization_hack_in_place_2.0"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://www.youtube.com/watch?v=P-r33xQarQM&feature=emb_title"
+                  target="_blank"
+                >
+                  Video Demo
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+          <ImageEvent
             date="August 2020"
             className="text-center"
             text="Social Media Application"
             src={L_SNS}
-            alt="MERN Tip Calculator"
+            alt=""
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -201,10 +277,10 @@ const Projecttimeline = () => {
               </div>
             </div>
           </ImageEvent>
-                </Events>
-            </Timeline>
-        </div>
-    )
+        </Events>
+      </Timeline>
+    </div>
+  )
 };
 
 export default Projecttimeline;
