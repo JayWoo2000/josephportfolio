@@ -31,7 +31,7 @@ const About = () => {
                             <Row>
                                 <Col className="d-flex justify-content-center flex-wrap">
                                     <div>
-                                        <a href="https://drive.google.com/file/d/1GxfJqCY1dnq2GrLAiFSJnbKi9FOCoEiQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://drive.google.com/file/d/1gMa3e4DhNS15J7oyfxOqS57E9owWOuKh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                                             <Button className="m-2" Button variant="outline-primary">
                                                 Resume
                                         </Button>

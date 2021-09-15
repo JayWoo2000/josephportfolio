@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import L_ReactToDoList from "../../assets/img/projects/React_ToDo_List.webp";
 import L_SNS from "../../assets/img/skills/socialMedia.png";
 import L_BIZTRK from "../../assets/img/skills/biztrak.png";
+import L_HYPERLOOP from "../../assets/img/skills/hyperloop.png"
 
 // skills
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -31,7 +32,9 @@ import L_AWS from "../../assets/img/skills/amazon-web-services-2.svg";
 import L_QUICKSIGHT from "../../assets/img/skills/amazon-quicksight.svg";
 import L_GRAFANA from "../../assets/img/skills/grafana.svg";
 import L_JAVA from "../../assets/img/skills/java.svg";
-
+import L_MATLAB from "../../assets/img/skills/matlab-seeklogo.com.svg";
+import L_SIMULINK from "../../assets/img/skills/Simulink_Logo.png";
+import L_SWARM from "../../assets/img/skills/SWARM.png";
 
 import "./timeline.style.css";
 
@@ -42,7 +45,129 @@ const Projecttimeline = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">History</h1>
       <Timeline>
         <Events>
-          {/* Project: Todo List With MUI */}
+          <ImageEvent
+            date="August 2021-December 2021"
+            className="text-center"
+            text="Vertically Integrated Projects SWARMS"
+            src={L_SWARM}
+            alt="SWARMS"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                                        </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> Path Planning Team Member: Responsible for developing a web-based user portal, cloud-based simulation engine and a set of standard algorithm components for autonomous control of drone swarms.
+                                                <hr />
+                        <strong>Tasks:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Integrating A* and Dijkstra algorithms to find the most efficient path for swarm of autonomous drones to reach their destination or series of destinations.</li>
+                          <li>Delegating tasks to different drones utilizing Pascal’s task allocation hierarchy to maximize efficiency of task completion.</li>
+                          <li>Collaborating with the obstacle avoidance team to allow for drones to better optimize path finding by treating other drones as obstacles to minimize collisions.</li>
+                        </ul>
+                        <hr />
+                        <strong>Environemnts and Languages used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_PYTHON}
+                                alt="Python"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "} Python
+                                                     </span>
+                          </li>
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://github.com/Green-Team-Systems/Obstacle-Avoidance"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+          <ImageEvent
+            date="June 2021-August 2021"
+            className="text-center"
+            text="Virgin Hyperloop"
+            src={L_HYPERLOOP}
+            alt="VIRGIN HYPERLOOP"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                                        </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> Simulation and Analysis Internship with Virgin Hyperloop, a high-speed transport system using a vacuum train.
+                                                <hr />
+                        <strong>Tasks:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Refined and developed MATLAB application to display embedded file structures, plot time-statistics, and automatically verify data.</li>
+                          <li>Performed post-processing on track data to better reflect real-world conditions of the transportation pod inside the vacuum tube. </li>
+                          <li>Pipelined different MATLAB projects, scripts, and Simulink models together so that manually reorganizing output structures and retrieving inputs by name was no longer required.</li>
+                        </ul>
+                        <hr />
+                        <strong>Skills used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_MATLAB}
+                                alt="Matlab"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "} MATLAB
+                                                     </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_SIMULINK}
+                                alt="Matlab Simulink"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "} Matlab Simulink </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              {" "}Matlab App Designer</span>
+                          </li>
+
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+
+            </div>
+          </ImageEvent>
           <ImageEvent
             date="August 2020-April 2021"
             className="text-center"
@@ -73,7 +198,7 @@ const Projecttimeline = () => {
                           <li>Developed Machine Learning algorithm in Python using SVM Vectors for Natural Language Processing to classify websites as adult or non-adult.</li>
                         </ul>
                         <hr />
-                        <strong>Environemnts and Languages used:</strong>
+                        <strong>Environments and Languages used:</strong>
                         <ul>
                           <li>
                             <span className="p-2">
@@ -138,6 +263,7 @@ const Projecttimeline = () => {
                     </Accordion.Collapse>
                   </Card>
                 </Accordion>
+                
               </div>
 
             </div>
